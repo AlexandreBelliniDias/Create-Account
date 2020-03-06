@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Create Account</title>
+  <link rel="icon" href="../Images/contact.png" />
+  <link rel="stylesheet" type="text/css" href="../CSS/form.css">
+  <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    rel="stylesheet">
+  <script type="text/javascript" src='../JavaScript/form.js'> </script>
+</head>
+
+<body id="Contact">
+  <div class="container2">
+    
+    <h1>Create Account</h1>
+    <form id="my-form" action="https://formspree.io/mlejkapb" method="POST">
+      <div class="row">
+        <button class="my-form-button2"><img src="../IMG/google_icon.png">Google</button>
+        <button id="facebook" class="my-form-button2"><img src="../IMG/facebook_icon.png">Facebook</button>
+        <div class="row">
+          <div class="col-75">
+            <hr><i>or</i>
+            <hr id="hrR">
+          </div>
+        </div>
+        <p id="my-form-status"></p>
+      </div>
+
+      <div class="row">
+        <div class="col-75">
+          <input type="text" id="Fname" name="FName" placeholder="First Name">
+          <input type="text" id="Lname" name="LName" placeholder="Last Name">
+          <input type="date" id="BDay" name="BDay" placeholder="Birth Day">
+        </div>
+      </div>
+
+
+
+      <div class="row">
+        <div class="col-75">
+          <input type="email" id="Email" name="Email" placeholder="Email">
+          <input type="email" id="ConfEmail" name="ConfEmail" placeholder="Confirm Email">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-75">
+          <input type="password" id="Password" name="Password" placeholder="Password">
+          <input type="password" id="REPassword" name="REPassword" placeholder="Confirm Password">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-75">
+          <input type="text" id="Question" name="Question" placeholder="Secret Question">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-75">
+          <input type="text" id="Answer" name="Answer" placeholder="Answer">
+        </div>
+      </div>
+
+
+
+      <div name="myform" id="myForm">
+        <select name="state" id="countrySel" size="1">
+          <option value="" selected="selected">Select Country</option>
+        </select>
+
+        <select name="countrya" id="stateSel" size="1">
+          <option value="" selected="selected">Select State</option>
+        </select>
+        <select name="district" id="districtSel" size="1">
+          <option value="" selected="selected">Select City</option>
+        </select><br>
+      </div>
+
+
+
+      <div class="row">
+        <div class="col-75">
+          <p><input type="checkbox" id="EmailNews" name="EmailNews">Receive news and special offers from Alex
+            Entertainment by email.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <button id="my-form-button">Create a free account</button>
+        <p id="my-form-status"></p>
+      </div>
+      <div class="row">
+        <button id="my-form-button">Already have an account?</button>
+        <p id="my-form-status"></p>
+      </div>
+
+      <div class="row">
+        <div class="col-75">
+          <p>By clicking on "Create a free account", I agree to the <i><a href="#">Alex Entertainment End User Licence
+                Agreement</a></i>
+          </p>
+        </div>
+      </div>
+      
+
+
+      <video autoplay muted loop id="myVideo">
+        <!-- <source src="../IMG/zed.mp4" type="video/mp4"> -->
+        <!-- <source src="../IMG/DVa-Final.mp4" type="video/mp4"> -->
+        <source src="../IMG/Sett.mp4" type="video/mp4">
+      </video>
+    </form>
+  </div>
+
+
+  <script src="../JS/city.js"></script>
+  <audio id="player" src="../IMG/music.mp3"></audio>
+      <div id="forfun">
+        <button onclick="document.getElementById('player').play()"><img src="../IMG/play.png"></button>
+        <button onclick="document.getElementById('player').pause()"><img src="../IMG/pause.png"></button>
+      </div>
+  <img id="logo" src="../IMG/AlexLogo.png">
+
+</body>
+
+</html>
